@@ -46,7 +46,7 @@ function App() {
 
     try {
       // Відправляємо POST-запит на ваш FastAPI сервер
-      const response = await fetch('http://localhost:8000/apply', {
+      const response = await fetch('https://proz-backend.onrender.com/apply', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
