@@ -3,7 +3,14 @@ from fastapi.middleware.cors import CORSMiddleware
 import os
 import requests
 from dotenv import load_dotenv
+from fastapi.middleware.cors import CORSMiddleware
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["https://proz-azure.vercel.app"], # Ваш домен Vercel
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 load_dotenv()
 
 app = FastAPI()
