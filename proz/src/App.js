@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; // Додано useState для роботи з формою
+import React, { useState } from 'react';
 import './App.css';
 
 function ServiceCard(props) {
@@ -29,7 +29,6 @@ function PriceRow(props) {
 }
 
 function App() {
-  // 1. Створюємо стан для зберігання даних форми
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -40,13 +39,11 @@ function App() {
     document.getElementById('contacts').scrollIntoView({ behavior: 'smooth' });
   }
 
-  // 2. Функція для обробки відправки форми
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Зупиняємо перезавантаження сторінки
+    e.preventDefault(); 
 
     try {
-      // Відправляємо POST-запит на ваш FastAPI сервер
-      const response = await fetch('https://proz-backend.onrender.com/apply', {
+      const response = await fetch('http://localhost:8000/apply', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -58,7 +55,6 @@ function App() {
 
       if (response.ok) {
         alert('Дякуємо! Ваша заявка надіслана в Telegram.');
-        // Очищаємо форму після успіху
         setFormData({ name: '', phone: '', message: '' });
       } else {
         alert('Помилка: ' + result.message);
@@ -99,7 +95,7 @@ function App() {
 
       <section className="experience-section">
         <div className="container">
-          <h2 className="section-title white">Мій досвід</h2>
+          <h2 className="section-title white" style={{ color: 'white' }}>Мій досвід</h2>
           <ul className="experience-list">
             <li><span>✔</span> 10+ років у сфері державних закупівель</li>
             <li><span>✔</span> Практика у великому державному замовнику</li>
@@ -140,12 +136,11 @@ function App() {
         <div className="container footer-flex">
           <div className="contact-info">
             <h2 className="footer-title">Зв'яжіться зі мною</h2>
-            <p>📞 <strong>Тел:</strong> +38 (097) 123-45-67</p>
-            <p>📧 <strong>Email:</strong> info@tenderconsult.com</p>
-            <p>✈ <strong>Telegram:</strong> @tenderconsult</p>
+            <p>📞 <strong>Тел:</strong> +38 (050) 614-06-05</p>
+            <p>📧 <strong>Email:</strong> skript1982@gmail.com</p>
+            <p>✈ <strong>Telegram:</strong> @tendeconsult_pro</p>
           </div>
-          
-          {/* 3. Додано onSubmit та прив'язка значень (value/onChange) */}
+
           <form className="contact-form" onSubmit={handleSubmit}>
             <input 
               type="text" 
