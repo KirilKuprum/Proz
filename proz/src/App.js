@@ -96,7 +96,7 @@ function App() {
         text="Підготовка тендерної пропозиції" 
       />
       <ServiceCard 
-        iconUrl="https://cdn-icons-png.flaticon.com/512/3212/3212134.png" 
+        iconUrl="https://cdn-icons-png.flaticon.com/512/1063/1063376.png" 
         text="Супровід закупівель" 
       />
       <ServiceCard 
