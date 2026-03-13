@@ -62,7 +62,36 @@
 
 }
 
+/* Стиль для самого зображення іконки */
+.service-icon-img {
+  width: 40px;  /* Розмір іконки */
+  height: 40px;
+  object-fit: contain;
+  /* Робимо іконку трохи синюватою, щоб пасувала до дизайну (опціонально) */
+  filter: brightness(0) saturate(100%) invert(18%) sepia(33%) saturate(1633%) hue-rotate(188deg) brightness(95%) contrast(92%);
+}
 
+/* Оновлюємо контейнер іконки */
+.service-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  background: #f4f7f9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  transition: background 0.3s ease;
+}
+
+.service-card:hover .service-icon-wrapper {
+  background: var(--light-blue);
+}
+
+/* Виправлення занадто дрібного шрифту, про який я казав раніше */
+.price-row, .contact-form input, .contact-form textarea {
+  font-size: 1rem !important; 
+}
 
 .price-row {
 
