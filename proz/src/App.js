@@ -4,7 +4,9 @@ import './App.css';
 function ServiceCard(props) {
   return (
     <div className="service-card">
-      <div className="service-icon-wrapper">{props.icon}</div>
+      <div className="service-icon-wrapper">
+        <img src={props.iconUrl} alt={props.text} className="service-icon-img" />
+      </div>
       <p className="service-text"><strong>{props.text}</strong></p>
     </div>
   );
