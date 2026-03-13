@@ -84,16 +84,28 @@ function App() {
       </section>
 
       <section className="services-section">
-        <div className="container">
-          <h2 className="section-title">Чим я можу допомогти</h2>
-          <div className="services-grid">
-            <ServiceCard icon="🔍" text="Аналіз тендерної документації" />
-            <ServiceCard icon="📋" text="Підготовка тендерної пропозиції" />
-            <ServiceCard icon="🤝" text="Супровід закупівель" />
-            <ServiceCard icon="⚖️" text="Оскарження в АМКУ" />
-          </div>
-        </div>
-      </section>
+  <div className="container">
+    <h2 className="section-title">Чим я можу допомогти</h2>
+    <div className="services-grid">
+      <ServiceCard 
+        iconUrl="https://cdn-icons-png.flaticon.com/512/1055/1055644.png" 
+        text="Аналіз тендерної документації" 
+      />
+      <ServiceCard 
+        iconUrl="https://cdn-icons-png.flaticon.com/512/2666/2666505.png" 
+        text="Підготовка тендерної пропозиції" 
+      />
+      <ServiceCard 
+        iconUrl="https://cdn-icons-png.flaticon.com/512/3121/3121530.png" 
+        text="Супровід закупівель" 
+      />
+      <ServiceCard 
+        iconUrl="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" 
+        text="Оскарження в АМКУ" 
+      />
+    </div>
+  </div>
+</section>
 
       <section className="experience-section">
         <div className="container">
