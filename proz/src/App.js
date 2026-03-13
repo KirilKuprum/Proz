@@ -100,7 +100,7 @@ function App() {
         text="Супровід закупівель" 
       />
       <ServiceCard 
-        iconUrl="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" 
+        iconUrl="https://cdn-icons-png.flaticon.com/512/7106/7106777.png" 
         text="Оскарження в АМКУ" 
       />
     </div>
