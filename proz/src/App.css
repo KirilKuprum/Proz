@@ -1,478 +1,253 @@
-.btn-primary {
-
-  background: var(--accent-orange);
-
-  color: white;
-
-  border: none;
-
-  padding: 15px 30px;
-
-  border-radius: 50px;
-
-  font-size: 1rem;
-
-  font-weight: bold;
-
-  cursor: pointer;
-
-  transition: all 0.3s ease;
-
-  text-transform: uppercase;
-
-  letter-spacing: 1px;
-
-  box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
-
+:root {
+  --main-blue: #1a3a5f;
+  --light-blue: #eef2f7;
+  --accent-orange: #e67e22;
+  --text-dark: #2c3e50;
+  --white: #ffffff;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 17px; 
+  color: var(--text-dark);
+  line-height: 1.5;
+}
 
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem; 
+  color: var(--main-blue);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--accent-orange);
+  margin: 10px auto 0;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(20, 45, 75, 0.85), rgba(20, 45, 75, 0.85)), 
+              url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200');
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding: 80px 0; 
+  text-align: center;
+}
+
+.hero-title { font-size: 3rem; margin-bottom: 15px; }
+.hero-subtitle { font-size: 1.1rem; opacity: 0.9; margin-bottom: 30px; }
+
+.btn-primary {
+  background: var(--accent-orange);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
+}
 
 .btn-primary:hover {
-
   background: #d35400; 
-
   transform: translateY(-2px);
-
   box-shadow: 0 6px 20px rgba(230, 126, 34, 0.5);
-
 }
 
-.pricing-section { 
-
-  padding: 60px 0 100px 0;
-
+.services-section { padding: 60px 0; background: var(--white); }
+.services-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.price-table {
-
-  max-width: 700px;
-
-  margin: 0 auto;
-
+.service-card {
   background: var(--white);
-
+  padding: 30px 15px; 
   border-radius: 15px;
-
-  border: 1px solid #d1d9e6; 
-
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12); 
-
-  overflow: hidden;
-
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+  flex: 1;
+  min-width: 220px;
 }
 
-/* Стиль для самого зображення іконки */
-.service-icon-img {
-  width: 40px;  /* Розмір іконки */
-  height: 40px;
-  object-fit: contain;
-  /* Робимо іконку трохи синюватою, щоб пасувала до дизайну (опціонально) */
-  filter: brightness(0) saturate(100%) invert(18%) sepia(33%) saturate(1633%) hue-rotate(188deg) brightness(95%) contrast(92%);
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-color: var(--accent-orange);
 }
 
-/* Оновлюємо контейнер іконки */
 .service-icon-wrapper {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   background: #f4f7f9;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 15px;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.service-icon-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
 
 .service-card:hover .service-icon-wrapper {
   background: var(--light-blue);
+  transform: scale(1.05);
 }
 
-/* Виправлення занадто дрібного шрифту, про який я казав раніше */
-.price-row, .contact-form input, .contact-form textarea {
-  font-size: 1rem !important; 
+.experience-section {
+  background: linear-gradient(rgba(26, 58, 95, 0.9), rgba(26, 58, 95, 0.9)), 
+              url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200');
+  background-size: cover;
+  padding: 60px 0;
+  color: white;
+}
+
+.experience-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.experience-list li {
+  font-size: 1rem; 
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.experience-list li span {
+  color: var(--accent-orange);
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.reviews-section { 
+  background: linear-gradient(135deg, #1a3a5f 0%, #0d1b2a 100%); 
+  padding: 60px 0; 
+  color: white; 
+}
+
+.reviews-section .section-title {
+  color: var(--white);
+}
+
+.reviews-grid { 
+  display: flex; 
+  gap: 30px; 
+  margin-top: 30px; 
+  flex-wrap: wrap; 
+}
+
+.review-bubble {
+  background: white;
+  color: #333;
+  padding: 25px;
+  border-radius: 15px;
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  font-size: 1rem;
+}
+
+.review-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: 0; 
+  left: 50px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid white;
+  transform: translateY(100%); 
+}
+
+.review-author {
+  margin-top: 15px;
+  font-weight: bold;
+  color: var(--main-blue);
+}
+
+.pricing-section { 
+  padding: 60px 0 100px 0;
+}
+
+.price-table {
+  max-width: 700px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: 15px;
+  border: 1px solid #d1d9e6; 
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12); 
+  overflow: hidden;
 }
 
 .price-row {
-
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
-
   padding: 25px 40px;
-
   border-bottom: 1px solid #edf2f7;
-
-  font-size: 0.7rem;
-
+  font-size: 1rem;
   transition: background 0.2s ease;
-
 }
-
-
 
 .price-row:last-child {
-
   border-bottom: none;
-
 }
-
-
 
 .price-row:hover {
-
   background: #f8fafc;
-
 }
-
-
 
 .price-value {
-
   font-weight: 800;
-
   color: var(--main-blue);
-
   background: var(--light-blue);
-
   padding: 5px 15px;
-
   border-radius: 8px;
-
   border: 1px solid rgba(26, 58, 95, 0.1);
-
 }
-
-
-
-:root {
-
-  --main-blue: #1a3a5f;
-
-  --light-blue: #eef2f7;
-
-  --accent-orange: #e67e22;
-
-  --text-dark: #2c3e50;
-
-  --white: #ffffff;
-
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-
-}
-
-
-
-body {
-
-  margin: 0;
-
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-
-  font-size: 17px; 
-
-  color: var(--text-dark);
-
-  line-height: 1.5;
-
-}
-
-
-
-.container {
-
-  max-width: 1100px;
-
-  margin: 0 auto;
-
-  padding: 0 20px;
-
-}
-
-
-
-.section-title {
-
-  text-align: center;
-
-  font-size: 2rem; 
-
-  color: var(--main-blue);
-
-  margin-bottom: 30px;
-
-  position: relative;
-
-}
-
-
-
-.section-title::after {
-
-  content: '';
-
-  display: block;
-
-  width: 60px;
-
-  height: 4px;
-
-  background: var(--accent-orange);
-
-  margin: 10px auto 0;
-
-}
-
-
-
-.reviews-section .section-title {
-
-  color: var(--white); 
-
-}
-
-
-
-.hero-section {
-
-  background: linear-gradient(rgba(20, 45, 75, 0.85), rgba(20, 45, 75, 0.85)), 
-
-              url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200');
-
-  background-size: cover;
-
-  background-attachment: fixed;
-
-  color: white;
-
-  padding: 80px 0; 
-
-  text-align: center;
-
-}
-
-
-
-.hero-title { font-size: 3rem; margin-bottom: 15px; }
-
-.hero-subtitle { font-size: 1.1rem; opacity: 0.9; margin-bottom: 30px; }
-
-
-
-.services-section { padding: 60px 0; background: var(--white); }
-
-.services-grid {
-
-  display: flex;
-
-  gap: 20px;
-
-  flex-wrap: wrap;
-
-}
-
-
-
-.service-card {
-
-  background: var(--white);
-
-  padding: 30px 15px; 
-
-  border-radius: 15px;
-
-  text-align: center;
-
-  transition: all 0.3s ease;
-
-  border: 1px solid #f0f0f0;
-
-  flex: 1;
-
-  min-width: 220px;
-
-}
-
-
-
-.service-card:hover {
-
-  transform: translateY(-10px);
-
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-
-  border-color: var(--accent-orange);
-
-}
-
-
-
-.service-icon-wrapper {
-
-  width: 70px;
-
-  height: 70px;
-
-  background: #f4f7f9;
-
-  border-radius: 50%;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  margin: 0 auto 15px;
-
-  font-size: 25px;
-
-}
-
-
-
-.experience-section {
-
-  background: linear-gradient(rgba(26, 58, 95, 0.9), rgba(26, 58, 95, 0.9)), 
-
-              url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200');
-
-  background-size: cover;
-
-  padding: 60px 0;
-
-  color: white;
-
-}
-
-
-
-.experience-list {
-
-  list-style: none;
-
-  padding: 0;
-
-  max-width: 600px;
-
-  margin: 0 auto;
-
-}
-
-
-
-.experience-list li {
-
-  font-size: 1rem; 
-
-  margin-bottom: 10px;
-
-  display: flex;
-
-  align-items: center;
-
-}
-
-
-
-.reviews-section { 
-
-  background: linear-gradient(135deg, #1a3a5f 0%, #0d1b2a 100%); 
-
-  padding: 60px 0; 
-
-  color: white; 
-
-}
-
-
-
-.reviews-grid { 
-
-  display: flex; 
-
-  gap: 30px; 
-
-  margin-top: 30px; 
-
-  flex-wrap: wrap; 
-
-}
-
-
-
-.review-bubble {
-
-  background: white;
-
-  color: #333;
-
-  padding: 25px;
-
-  border-radius: 15px;
-
-  flex: 1;
-
-  min-width: 300px;
-
-  position: relative;
-
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-
-  font-size: 1rem;
-
-}
-
-
-
-.review-bubble::after {
-
-  content: '';
-
-  position: absolute;
-
-  bottom: 0; 
-
-  left: 50px;
-
-  width: 0;
-
-  height: 0;
-
-  border-left: 15px solid transparent;
-
-  border-right: 15px solid transparent;
-
-  border-top: 15px solid white;
-
-  transform: translateY(100%); 
-
-}
-
-
 
 .footer-section { background: #0b132b; color: white; padding: 60px 0; }
-
 .footer-flex { display: flex; gap: 40px; align-items: flex-start; }
 
-
+.contact-info { flex: 1; }
+.footer-title { font-size: 1.8rem; margin-bottom: 20px; color: var(--accent-orange); }
 
 .contact-form { flex: 1; display: flex; flex-direction: column; gap: 10px; }
-
 .contact-form input, .contact-form textarea {
-
   padding: 12px;
-
-  font-size: 0.7rem;
-
+  font-size: 1rem;
   border-radius: 8px;
-
   border: 1px solid rgba(255,255,255,0.2);
-
   background: rgba(255,255,255,0.05);
-
   color: white;
-
 }
