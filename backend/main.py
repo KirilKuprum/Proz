@@ -17,7 +17,7 @@ app.add_middleware(
 )
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "8632700178:AAHOKybHsYs-a4rsZ1JsOpSNSQs_-7Q2ci8")
-CHAT_ID = os.getenv("CHAT_ID", "5247430396")
+CHAT_ID = os.getenv("CHAT_ID", "37330298")
 
 def send_telegram_msg(text):
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
