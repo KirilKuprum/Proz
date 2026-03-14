@@ -97,7 +97,7 @@ function App() {
               </ul>
             </div>
             <div className="experience-image-col">
-              <img src={userIcon} alt="Андрій" className="user-profile-img" />
+              <img src={userIcon} alt="Андрій Шевченко"" className="user-profile-img" />
             </div>
           </div>
         </div>
