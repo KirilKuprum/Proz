@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import './App.css';
 
+import icon1 from './img/1.jpg';
+import icon2 from './img/2.jpg';
+import icon3 from './img/3.jpg';
+import icon4 from './img/4.jpg';
+
 function ServiceCard(props) {
   return (
     <div className="service-card">
@@ -88,19 +93,19 @@ function App() {
     <h2 className="section-title">Чим я можу допомогти</h2>
     <div className="services-grid">
       <ServiceCard 
-        iconUrl="https://cdn-icons-png.flaticon.com/512/1055/1055644.png" 
+        iconUrl={icon1} 
         text="Аналіз тендерної документації" 
       />
       <ServiceCard 
-        iconUrl="https://cdn-icons-png.flaticon.com/512/2666/2666505.png" 
+        iconUrl={icon4} 
         text="Підготовка тендерної пропозиції" 
       />
       <ServiceCard 
-        iconUrl="https://cdn-icons-png.flaticon.com/512/4185/4185509.png" 
+        iconUrl={icon3} 
         text="Супровід закупівель" 
       />
       <ServiceCard 
-        iconUrl="https://cdn-icons-png.flaticon.com/512/7106/7106777.png" 
+        iconUrl={icon2} 
         text="Оскарження в АМКУ" 
       />
     </div>
