@@ -87,7 +87,7 @@ function App() {
 
       <section className="experience-section">
         <div className="container">
-          <h2 className="section-title" style={{ color: 'white' }}>Мій досвід</h2>
+          <h2 className="section-title" style={{ color: 'white' }}>Про себе</h2>
           <div className="experience-flex">
             <div className="experience-text-col">
               <ul className="experience-list">
@@ -107,7 +107,7 @@ function App() {
 
       <section className="reviews-section">
         <div className="container">
-          <h2 className="section-title">Відгуки клієнтів</h2>
+          <h2 className="section-title" style={{ color: 'white' }}>Відгуки клієнтів</h2>
           <div className="reviews-grid">
             <ReviewBubble text="Завдяки вам ми виграли складний тендер. Все було підготовлено професійно. Рекомендую!" author="Владислав, КСКЗ" />
             <ReviewBubble text="Дуже допомогли з оскарженням. Професійний підхід і швидкий результат!" author="Ірина, Медтех" />
