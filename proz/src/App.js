@@ -131,7 +131,7 @@ function App() {
           <div className="contact-info">
             <h2 className="footer-title" style={{ color: 'white' }}>Зв'яжіться зі мною</h2>
             <p>📞 <strong>Тел:</strong> +38 (050) 614-06-05</p>
-            <p>📧 <strong>Email:</strong> skript1982@gmail.com</p>
+            <p>📧 <strong>Email:</strong> hello@tenderconsult.pro</p>
             <p>✈ <strong>Telegram:</strong> @tendeconsult_pro</p>
           </div>
 
