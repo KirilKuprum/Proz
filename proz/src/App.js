@@ -67,11 +67,15 @@ function App() {
   return (
     <div className="landing">
       <section className="hero-section">
-        <div className="container">
-          <img src={mainIcon} alt="TenderConsult Logo" className="main-logo" />
-          <h1 className="hero-title">Підготовка тендерних пропозицій у системі Prozorro</h1>
-          <p className="hero-subtitle">Допомога компаніям брати участь у публічних закупівлях та перемагати</p>
-          <button className="btn-primary" onClick={handleScroll}>Безкоштовна консультація</button>
+        <div className="container hero-flex">
+          <div className="hero-text">
+            <h1 className="hero-title">Підготовка тендерних пропозицій у системі Prozorro</h1>
+            <p className="hero-subtitle">Допомога компаніям брати участь у публічних закупівлях та перемагати</p>
+            <button className="btn-primary" onClick={handleScroll}>Безкоштовна консультація</button>
+          </div>
+          <div className="hero-logo-container">
+            <img src={mainIcon} alt="Logo" className="hero-side-logo" />
+          </div>
         </div>
       </section>
 
