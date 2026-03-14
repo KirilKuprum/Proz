@@ -95,7 +95,7 @@ function App() {
                 <li><span>✔</span> 10+ років у сфері державних закупівель</li>
                 <li><span>✔</span> Практика у великому державному замовнику</li>
                 <li><span>✔</span> Глибоке знання Prozorro та законодавства</li>
-                <li><span>✔</span> Сотні успішно поданих тендерних пропозицій</li>
+                <li><span>✔</span> Знання як успішно подати тендерну пропозицю</li>
               </ul>
             </div>
             <div className="experience-image-col">
