@@ -117,9 +117,9 @@ function App() {
           <h2 className="section-title white" style={{ color: 'white' }}>Мій досвід</h2>
           <ul className="experience-list">
             <li><span>✔</span> 10+ років у сфері державних закупівель</li>
-            <li><span>✔</span> Практика у великому державному замовнику</li>
+            <li><span>✔</span> Практика у великому державному замовнику - Голова тендерного комітету, Уповноважена особа</li>
             <li><span>✔</span> Глибоке знання Prozorro та законодавства</li>
-            <li><span>✔</span> Сотні успішно поданих тендерних пропозицій</li>
+            <li><span>✔</span> Знання як успішно подати тендерну пропозицію</li>
           </ul>
         </div>
       </section>
@@ -130,11 +130,11 @@ function App() {
           <div className="reviews-grid">
             <ReviewBubble 
               text="Завдяки вам ми виграли складний тендер. Все було підготовлено професійно. Рекомендую!" 
-              author="Олександр, Будкомпанія" 
+              author="Владислав, КСКЗ" 
             />
             <ReviewBubble 
               text="Дуже допомогли з оскарженням. Професійний підхід і швидкий результат!" 
-              author="Ірина, Медтех" 
+              author="Антон, Промінвест" 
             />
           </div>
         </div>
@@ -156,7 +156,7 @@ function App() {
           <div className="contact-info">
             <h2 className="footer-title">Зв'яжіться зі мною</h2>
             <p>📞 <strong>Тел:</strong> +38 (050) 614-06-05</p>
-            <p>📧 <strong>Email:</strong> skript1982@gmail.com</p>
+            <p>📧 <strong>Email:</strong> hello@tendercosult.pro</p>
             <p>✈ <strong>Telegram:</strong> @tendeconsult_pro</p>
           </div>
 
