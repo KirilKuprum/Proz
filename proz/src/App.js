@@ -27,15 +27,6 @@ function ReviewBubble(props) {
   );
 }
 
-function PriceRow(props) {
-  return (
-    <div className="price-row">
-      <span>{props.label}</span>
-      <span className="price-value">{props.price}</span>
-    </div>
-  );
-}
-
 function App() {
   const [formData, setFormData] = useState({ name: '', phone: '', message: '' });
 
