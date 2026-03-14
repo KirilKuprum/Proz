@@ -6,6 +6,7 @@ import icon2 from './img/2.jpg';
 import icon3 from './img/3.jpg';
 import icon4 from './img/4.jpg';
 import userIcon from './img/user.jpg';
+import mainIcon from './img/mainIcon.jpg';
 
 function ServiceCard(props) {
   return (
