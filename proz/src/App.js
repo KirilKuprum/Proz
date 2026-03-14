@@ -11,7 +11,7 @@ function ServiceCard(props) {
   return (
     <div className="service-card">
       <div className="service-icon-wrapper">
-        <img src={props.iconUrl} alt={props.text} className="service-icon-img" />
+        <img src={props.iconUrl} alt={props.text || "Послуга"} className="service-icon-img" />
       </div>
       <p className="service-text"><strong>{props.text}</strong></p>
     </div>
@@ -23,6 +23,15 @@ function ReviewBubble(props) {
     <div className="review-bubble">
       <p>"{props.text}"</p>
       <div className="review-author">{props.author}</div>
+    </div>
+  );
+}
+
+function PriceRow(props) {
+  return (
+    <div className="price-row">
+      <span>{props.label}</span>
+      <span className="price-value">{props.price}</span>
     </div>
   );
 }
@@ -78,13 +87,15 @@ function App() {
 
       <section className="experience-section">
         <div className="container">
-          <h2 className="section-title" style={{ color: 'white' }}>Про себе</h2>
+          <h2 className="section-title" style={{ color: 'white' }}>Мій досвід</h2>
           <div className="experience-flex">
             <div className="experience-text-col">
               <ul className="experience-list">
                 <li style={{ fontSize: '24px', fontWeight: 'bold', color: 'var(--accent-orange)', marginBottom: '15px' }}>Андрій Шевченко</li>
                 <li><span>✔</span> 10+ років у сфері державних закупівель</li>
+                <li><span>✔</span> Практика у великому державному замовнику</li>
                 <li><span>✔</span> Глибоке знання Prozorro та законодавства</li>
+                <li><span>✔</span> Сотні успішно поданих тендерних пропозицій</li>
               </ul>
             </div>
             <div className="experience-image-col">
@@ -98,13 +109,32 @@ function App() {
         <div className="container">
           <h2 className="section-title">Відгуки клієнтів</h2>
           <div className="reviews-grid">
-            <ReviewBubble text="Завдяки вам ми виграли складний тендер." author="Владислав, КСКЗ" />
+            <ReviewBubble text="Завдяки вам ми виграли складний тендер. Все було підготовлено професійно. Рекомендую!" author="Владислав, КСКЗ" />
+            <ReviewBubble text="Дуже допомогли з оскарженням. Професійний підхід і швидкий результат!" author="Ірина, Медтех" />
+          </div>
+        </div>
+      </section>
+
+      <section className="pricing-section">
+        <div className="container">
+          <h2 className="section-title">Вартість послуг</h2>
+          <div className="price-table">
+            <PriceRow label="Аналіз тендеру" price="від 500 грн" />
+            <PriceRow label="Підготовка пропозиції" price="від 3000 грн" />
+            <PriceRow label="Супровід тендеру" price="від 5000 грн" />
           </div>
         </div>
       </section>
 
       <footer className="footer-section" id="contacts">
         <div className="container footer-flex">
+          <div className="contact-info">
+            <h2 className="footer-title" style={{ color: 'white' }}>Зв'яжіться зі мною</h2>
+            <p>📞 <strong>Тел:</strong> +38 (050) 614-06-05</p>
+            <p>📧 <strong>Email:</strong> skript1982@gmail.com</p>
+            <p>✈ <strong>Telegram:</strong> @tendeconsult_pro</p>
+          </div>
+
           <form className="contact-form" onSubmit={handleSubmit}>
             <input type="text" placeholder="Ваше ім'я" required value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} />
             <input type="tel" placeholder="Ваш телефон" required value={formData.phone} onChange={(e) => setFormData({...formData, phone: e.target.value})} />
