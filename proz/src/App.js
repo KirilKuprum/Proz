@@ -110,7 +110,7 @@ function App() {
           <h2 className="section-title" style={{ color: 'white' }}>Відгуки клієнтів</h2>
           <div className="reviews-grid">
             <ReviewBubble text="Завдяки вам ми виграли складний тендер. Все було підготовлено професійно. Рекомендую!" author="Владислав, КСКЗ" />
-            <ReviewBubble text="Дуже допомогли з оскарженням. Професійний підхід і швидкий результат!" author="Ірина, Медтех" />
+            <ReviewBubble text="Дуже допомогли з оскарженням. Професійний підхід і швидкий результат!" author="Антон, ПромІнвест" />
           </div>
         </div>
       </section>
