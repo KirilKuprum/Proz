@@ -68,6 +68,7 @@ function App() {
     <div className="landing">
       <section className="hero-section">
         <div className="container">
+          <img src={mainIcon} alt="TenderConsult Logo" className="main-logo" />
           <h1 className="hero-title">Підготовка тендерних пропозицій у системі Prozorro</h1>
           <p className="hero-subtitle">Допомога компаніям брати участь у публічних закупівлях та перемагати</p>
           <button className="btn-primary" onClick={handleScroll}>Безкоштовна консультація</button>
