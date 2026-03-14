@@ -114,8 +114,9 @@ function App() {
 
       <section className="experience-section">
         <div className="container">
-          <h2 className="section-title white" style={{ color: 'white' }}>Мій досвід</h2>
+          <h2 className="section-title white" style={{ color: 'white' }}>Про себе</h2>
           <ul className="experience-list">
+            <li style={{ font-size:10px}}>Андрій Шевченко</li>
             <li><span>✔</span> 10+ років у сфері державних закупівель</li>
             <li><span>✔</span> Практика у великому державному замовнику - Голова тендерного комітету, Уповноважена особа</li>
             <li><span>✔</span> Глибоке знання Prozorro та законодавства</li>
