@@ -73,7 +73,7 @@ function App() {
         <div className="hero-center-content">
           <h1 className="hero-title">Підготовка тендерних пропозицій у системі Prozorro</h1>
           <p className="hero-subtitle">Допомога компаніям брати участь у публічних закупівлях та перемагати</p>
-          <button className="btn-primary" onClick={handleScroll}>Безкоштовна консультація</button>
+          <button className="btn-primary" onClick={handleScroll}>Перша консультація безкоштовно</button>
         </div>
       </div>
       </section>
