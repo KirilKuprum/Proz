@@ -179,8 +179,8 @@ body {
 
 .pricing-section { padding: 60px 0; }
 .price-table { max-width: 800px; margin: 0 auto; background: white; border-radius: 15px; box-shadow: var(--shadow); border: 1px solid #eee; }
-.price-row { display: flex; justify-content: space-between; padding: 20px 40px; border-bottom: 1px solid #eee; }
-.price-value { font-weight: bold; color: var(--main-blue); background: var(--light-blue); padding: 5px 12px; border-radius: 5px; }
+.price-row { display: flex; justify-content: space-between; align-items: center;padding: 20px 40px; border-bottom: 1px solid #eee;gap: 15px; }
+.price-value { font-weight: bold; color: var(--main-blue); background: var(--light-blue); padding: 5px 12px; border-radius: 5px; white-space: nowrap; flex-shrink: 0; }
 
 .footer-section { background: #0b132b; color: white; padding: 60px 0; }
 .footer-flex { display: flex; gap: 40px; }
@@ -208,5 +208,11 @@ body {
   }
   .experience-flex {
     flex-direction: column-reverse;
+  }
+}
+@media (max-width: 600px) {
+  .price-row {
+    padding: 15px 20px; 
+    font-size: 15px;   
   }
 }
