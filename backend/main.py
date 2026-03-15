@@ -10,7 +10,12 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://proz-azure.vercel.app"],
+    allow_origins=[
+        "https://tenderconsult.pro",  
+        "https://www.tenderconsult.pro",    
+        "https://proz-azure.vercel.app",   
+        "http://localhost:3000"             
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
