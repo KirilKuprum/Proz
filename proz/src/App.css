@@ -190,7 +190,7 @@ body {
 
 @media (max-width: 850px) {
   .hero-container-relative {
-    padding-top: 60px;
+    padding-top: 20px;
   }
   .hero-corner-logo {
     position: relative;
