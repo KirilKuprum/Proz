@@ -113,9 +113,12 @@ function App() {
   
       <section className="certificate-section" style={{ padding: '60px 0', backgroundColor: '#f9f9f9', textAlign: 'center' }}>
         <div className="container">
-          <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: 'var(--main-blue)', marginBottom: '20px' }}>
-            Сертифікований спеціаліст з публічних закупівель
-          </h2>
+          <div className="experience-text-col">
+              <ul className="experience-list">
+                <li style={{ fontSize: '24px', fontWeight: 'bold', color: 'var(--accent-orange)', marginBottom: '15px' }}>Андрій Шевченко</li>
+                <li><span>✔</span> Сертифікований спеціаліст з публічних закупівель</li>
+              </ul>
+            </div>
           <img 
             src={sert} 
             alt="Сертифікат з публічних закупівель" 
