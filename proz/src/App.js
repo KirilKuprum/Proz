@@ -111,7 +111,7 @@ function App() {
         </div>
       </section>
   
-      <section className="certificate-section" style={{ padding: '60px 0', backgroundColor: '#f9f9f9', textAlign: 'center' }}>
+      <section className="certificate-section" style={{ padding: '60px 0', backgroundColor: 'var(--main-blue)', textAlign: 'center', textAlign: 'center' }}>
         <div className="container">
           <div className="experience-text-col">
               <ul className="experience-list">
