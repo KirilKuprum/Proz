@@ -110,7 +110,20 @@ function App() {
           </div>
         </div>
       </section>
-
+  
+      <section className="certificate-section" style={{ padding: '60px 0', backgroundColor: '#f9f9f9', textAlign: 'center' }}>
+        <div className="container">
+          <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: 'var(--main-blue)', marginBottom: '20px' }}>
+            Сертифікований спеціаліст з публічних закупівель
+          </h2>
+          <img 
+            src={sert} 
+            alt="Сертифікат з публічних закупівель" 
+            style={{ maxWidth: '400px', height: 'auto', display: 'inline-block' }} 
+          />
+        </div>
+      </section>
+            
       <section className="reviews-section">
         <div className="container">
           <h2 className="section-title" style={{ color: 'white' }}>Відгуки клієнтів</h2>
