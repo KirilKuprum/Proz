@@ -115,7 +115,6 @@ function App() {
         <div className="container">
           <div className="experience-text-col">
               <ul className="experience-list">
-                <li style={{ fontSize: '24px', fontWeight: 'bold', color: 'var(--accent-orange)', marginBottom: '15px' }}>Андрій Шевченко</li>
                 <li><span>✔</span> Сертифікований спеціаліст з публічних закупівель</li>
               </ul>
             </div>
