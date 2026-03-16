@@ -112,19 +112,22 @@ function App() {
       </section>
   
       <section className="certificate-section" style={{ padding: '60px 0', backgroundColor: 'var(--main-blue)', textAlign: 'center' }}>
-        <div className="container">
-          <div className="experience-text-col">
-              <ul className="experience-list">
-                <li><span>✔</span> Сертифікований спеціаліст з публічних закупівель</li>
-              </ul>
-            </div>
-          <img 
-            src={sert} 
-            alt="Сертифікат з публічних закупівель" 
-            style={{ maxWidth: '400px', height: 'auto', display: 'inline-block' }} 
-          />
-        </div>
-      </section>
+  <div className="container">
+    <div className="experience-text-col">
+      <ul className="experience-list" style={{ color: 'white', listStyle: 'none', padding: 0 }}>
+        <li style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <span style={{ color: 'var(--accent-orange)', marginRight: '10px' }}>✔</span> 
+          Сертифікований спеціаліст з публічних закупівель
+        </li>
+      </ul>
+    </div>
+    <img 
+      src={sert} 
+      alt="Сертифікат з публічних закупівель" 
+      style={{ maxWidth: '400px', width: '100%', height: 'auto', display: 'inline-block', marginTop: '20px', borderRadius: '5px' }} 
+    />
+  </div>
+</section>
             
       <section className="reviews-section">
         <div className="container">
