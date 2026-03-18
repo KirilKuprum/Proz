@@ -150,6 +150,7 @@ body {
   padding: 12px;
   border-radius: 10px;
   border-left: 4px solid #27ae60;
+  background-color:gray;
 }
 
 .check-circle {
