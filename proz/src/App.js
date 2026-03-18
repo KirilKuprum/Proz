@@ -84,6 +84,25 @@ function App() {
                 Безкоштовний розбір першого тендеру
               </button>
               <p className="cta-subtext">Експрес-аналіз. Один тендер на компанію</p>
+            </div
+    
+            <div className="experience-badge-card">
+              <h3>Працював на стороні замовника в Prozorro</h3>
+              <div className="badge-item">
+                <div className="badge-icon">📋</div>
+                  <p>З 2020 року — уповноважена особа у сфері публічних закупівель</p>
+                </div>
+                <div className="badge-item">
+                  <div className="badge-icon">⚖️</div>
+                    <p>У 2021 році — голова тендерного комітету</p>
+                  </div>
+                <p className="badge-footer-text">
+                  Знаю, як перевіряються тендерні пропозиції та через які помилки найчастіше відхиляють учасників
+                </p>
+              <div className="badge-check">
+                <span className="check-circle">✔</span>
+                <strong>Готую документи так, щоб мінімізувати ризик відхилення</strong>
+              </div>
             </div>
           </div>
         </div>
