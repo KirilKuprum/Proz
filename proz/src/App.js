@@ -69,14 +69,24 @@ function App() {
     <div className="landing">
       <section className="hero-section">
       <div className="container hero-container-relative">
-        <img src={mainIcon} alt="Logo" className="hero-corner-logo" />
     
+        <img src={mainIcon} alt="TenderConsult Logo" className="hero-corner-logo" />
+
         <div className="hero-center-content">
-          <h1 className="hero-title">Підготовка тендерних пропозицій у системі Prozorro</h1>
-          <p className="hero-subtitle">Допомога компаніям брати участь у публічних закупівлях та перемагати</p>
-          <button className="btn-primary" onClick={handleScroll}>Перша консультація безкоштовно</button>
+            <h1 className="hero-title">Тендерна пропозиція <br/><span>без помилок і відхилень</span></h1>
+            <p className="hero-subtitle">
+              З 2020 року — уповноважена особа у сфері публічних закупівель. <br/>
+              Виявимо ризики ще до моменту подачі.
+            </p>
+      
+            <div className="hero-cta-group">
+              <button className="btn-primary main-cta" onClick={handleScroll}>
+                Безкоштовний розбір першого тендеру
+              </button>
+              <p className="cta-subtext">Експрес-аналіз. Один тендер на компанію</p>
+            </div>
+          </div>
         </div>
-      </div>
       </section>
 
       <section className="services-section">
