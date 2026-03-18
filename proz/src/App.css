@@ -92,6 +92,68 @@ body {
   font-style: italic;
   margin: 0;
 }
+.experience-badge-card {
+  background: rgba(255, 255, 255, 0.95);
+  color: #1a3a5f;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 40px auto 0;
+  text-align: left;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.experience-badge-card h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #1a3a5f;
+  border-bottom: 2px solid var(--accent-orange);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.badge-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.badge-icon {
+  font-size: 1.5rem;
+  background: #eef2f7;
+  padding: 10px;
+  border-radius: 10px;
+  line-height: 1;
+}
+
+.badge-item p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.badge-footer-text {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #555;
+  margin: 15px 0;
+}
+
+.badge-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f0fff4; 
+  padding: 12px;
+  border-radius: 10px;
+  border-left: 4px solid #27ae60;
+}
+
+.check-circle {
+  color: #27ae60;
+  font-weight: bold;
+}
 .btn-primary {
   background: var(--accent-orange);
   color: white;
@@ -242,5 +304,12 @@ body {
   .price-row {
     padding: 15px 20px; 
     font-size: 15px;   
+  }
+  .experience-badge-card {
+    padding: 20px;
+    margin: 30px 10px 0;
+  }
+  .experience-badge-card h3 {
+    font-size: 1.2rem;
   }
 }
