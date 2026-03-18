@@ -73,7 +73,7 @@ function App() {
         <img src={mainIcon} alt="TenderConsult Logo" className="hero-corner-logo" />
 
         <div className="hero-center-content">
-            <h1 className="hero-title">Тендерна пропозиція <br/><span>без помилок і відхилень</span></h1>
+            <h1 className="hero-title">Тендерна пропозиція без помилок і відхилень</h1>
             <p className="hero-subtitle">
               З 2020 року — уповноважена особа у сфері публічних закупівель. <br/>
               Виявимо ризики ще до моменту подачі.
