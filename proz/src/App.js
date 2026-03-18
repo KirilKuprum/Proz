@@ -84,7 +84,7 @@ function App() {
                 Безкоштовний розбір першого тендеру
               </button>
               <p className="cta-subtext">Експрес-аналіз. Один тендер на компанію</p>
-            </div
+            </div>
     
             <div className="experience-badge-card">
               <h3>Працював на стороні замовника в Prozorro</h3>
