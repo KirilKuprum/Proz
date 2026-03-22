@@ -168,8 +168,31 @@ body {
 .cert-large-img:hover {
   transform: scale(1.02);
 }
+.cert-wrapper {
+  margin-top: 25px; 
+  text-align: left; 
+}
 
-/* Адаптація для мобільних */
+.cert-mini-img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.cert-mini-img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 850px) {
+  .cert-wrapper {
+    text-align: center; 
+  }
+}
 @media (max-width: 850px) {
   .experience-grid {
     grid-template-columns: 1fr;
