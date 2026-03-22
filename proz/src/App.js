@@ -122,41 +122,34 @@ function App() {
 
       <section className="experience-section">
         <div className="container">
-          <h2 className="section-title" style={{ color: 'white' }}>Про себе</h2>
-          <div className="experience-flex">
-            <div className="experience-text-col">
-              <ul className="experience-list">
-                <li style={{ fontSize: '24px', fontWeight: 'bold', color: 'var(--accent-orange)', marginBottom: '15px' }}>Андрій Шевченко</li>
-                <li><span>✔</span> 10+ років у сфері державних закупівель</li>
-                <li><span>✔</span> Практика у великому державному замовнику</li>
-                <li><span>✔</span> Глибоке знання Prozorro та законодавства</li>
-                <li><span>✔</span> Знання як успішно подати тендерну пропозицю</li>
-              </ul>
-            </div>
-            <div className="experience-image-col">
-              <img src={userIcon} alt="Андрій Шевченко" className="user-profile-img" />
+    <h2 className="section-title" style={{ color: 'white' }}>Про себе</h2>
+    <div className="experience-grid">
+      <div className="experience-text-col">
+        <ul className="experience-list">
+          <li className="experience-name">Андрій Шевченко</li>
+          <li><span>✔</span> 10+ років у сфері державних закупівель</li>
+          <li><span>✔</span> Практика у великому державному замовнику</li>
+          <li><span>✔</span> Глибоке знання Prozorro та законодавства</li>
+          <li><span>✔</span> Знання як успішно подати тендерну пропозицію</li>
+          <li className="cert-badge">
+            <span>✔</span> Сертифікований спеціаліст з публічних закупівель
+          </li>
+        </ul>
+      </div>
+
+            <div className="experience-visual-col">
+              <div className="img-wrapper">
+                <img src={userIcon} alt="Андрій Шевченко" className="user-profile-img" />
+              </div>
+              <div className="cert-wrapper">
+                <img src={sert} alt="Сертифікат" className="cert-mini-img" />
+              </div>
             </div>
           </div>
         </div>
       </section>
   
-      <section className="certificate-section" style={{ padding: '60px 0', backgroundColor: 'var(--main-blue)', textAlign: 'center' }}>
-  <div className="container">
-    <div className="experience-text-col">
-      <ul className="experience-list" style={{ color: 'white', listStyle: 'none', padding: 0 }}>
-        <li style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <span style={{ color: 'var(--accent-orange)', marginRight: '10px' }}>✔</span> 
-          Сертифікований спеціаліст з публічних закупівель
-        </li>
-      </ul>
-    </div>
-    <img 
-      src={sert} 
-      alt="Сертифікат з публічних закупівель" 
-      style={{ maxWidth: '400px', width: '100%', height: 'auto', display: 'inline-block', marginTop: '20px', borderRadius: '5px' }} 
-    />
-  </div>
-</section>
+     
             
       <section className="reviews-section">
         <div className="container">
