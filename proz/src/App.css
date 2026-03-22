@@ -184,10 +184,6 @@ body {
   cursor: zoom-in;
 }
 
-.cert-mini-img:hover {
-  transform: scale(1.05);
-}
-
 @media (max-width: 850px) {
   .cert-wrapper {
     text-align: center; 
