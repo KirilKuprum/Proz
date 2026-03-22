@@ -135,15 +135,16 @@ function App() {
             <span>✔</span> Сертифікований спеціаліст з публічних закупівель
           </li>
         </ul>
+        <div className="cert-wrapper">
+            <img src={sert} alt="Сертифікат" className="cert-mini-img" />
+        </div>
       </div>
 
             <div className="experience-visual-col">
               <div className="img-wrapper">
                 <img src={userIcon} alt="Андрій Шевченко" className="user-profile-img" />
               </div>
-              <div className="cert-wrapper">
-                <img src={sert} alt="Сертифікат" className="cert-mini-img" />
-              </div>
+              
             </div>
           </div>
         </div>
