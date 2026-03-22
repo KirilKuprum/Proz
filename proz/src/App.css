@@ -150,17 +150,23 @@ body {
   border: 4px solid rgba(255, 255, 255, 0.1);
 }
 
-.cert-mini-img {
-  width: 100%;
-  max-width: 250px;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-  cursor: zoom-in;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+.cert-container-text-col {
+  margin-top: 30px; 
+  text-align: left; 
 }
 
-.cert-mini-img:hover {
-  transform: scale(1.05);
+.cert-large-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  cursor: zoom-in; 
+}
+
+.cert-large-img:hover {
+  transform: scale(1.02);
 }
 
 /* Адаптація для мобільних */
