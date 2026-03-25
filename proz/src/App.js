@@ -7,7 +7,7 @@ import icon3 from './img/3.jpg';
 import icon4 from './img/4.jpg';
 import userIcon from './img/user.jpg';
 import sert from './img/sert.jpg';
-import newMain from './img/new.jpg';
+import newMain from './img/newMainLogo.jpg';
 
 function ServiceCard(props) {
   return (
