@@ -8,6 +8,7 @@ import icon4 from './img/4.jpg';
 import userIcon from './img/user.jpg';
 import mainIcon from './img/mainIcon.jpg';
 import sert from './img/sert.jpg';
+import newMain from './img/new.jpg';
 
 function ServiceCard(props) {
   return (
@@ -70,7 +71,7 @@ function App() {
       <section className="hero-section">
       <div className="container hero-container-relative">
     
-        <img src={mainIcon} alt="TenderConsult Logo" className="hero-corner-logo" />
+        <img src={newMain} alt="TenderConsult Logo" className="hero-corner-logo" />
 
         <div className="hero-center-content">
             <h1 className="hero-title">Тендерна пропозиція без помилок і відхилень</h1>
