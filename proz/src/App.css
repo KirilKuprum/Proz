@@ -47,8 +47,9 @@ body {
 
 .hero-corner-logo {
   position: absolute;
-  top: -50px; 
-  right: 0;
+  top: -80px; 
+  left: 50%;
+  transform: translateX(-50%);
   max-width: 300px;
   height: auto;
   border-radius: 10px;
